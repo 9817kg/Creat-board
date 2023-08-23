@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+body{
+  background-color : #CAE2F7;
+}
+
+table,tr,td, th{
+  border : 1px solid black;
+  border-collapse : collapse;
+}
+
+.box{
+  display: inline-block;
+  /*왼쪽부터 채워지다가 자리가 모자라면 아래로 자연스럽게 흐르듯이 배치*/
+  float: left;/*n스크린 기기에 대응*/	
+}
+
+.box2{
+  clear: both;
+  display: block;
+}
+
+.box3{
+  clear: both;
+  display: block;
+  text-align : center;
+}
+
+ul li{
+  list-style:none; 
+}
+
+ul, li{
+  margin : 0px;
+  padding: 0px;
+  border : 1px solid black;
+  border-collapse : collapse;
+}
+.article{
+  clear: both;
+  display: box;
+  margin : 5px;
+  width : 90%;
+  border : 1px solid black;
+  border-collapse : collapse;
+  background-color : #A5CFF1;	
+}
+
+#list_article ul li{
+  margin : 5px;
+  padding: 5px;	
+  border : 0px;
+}
+
+label{ /*label 엘리먼트에 적용*/
+  background-color : #A5CFF1;
+  width: 100px;
+}
+
+.label2{ /*class="label2"인 엘리먼트에 적용*/
+  background-color : #A5CFF1;
+  text-align : center;
+}
+
+.center{/*class="content"인 엘리먼트에 적용*/
+  text-align : center;
+}
+
+#status{
+  background-color : #CAE2F7;
+  margin : 0px;
+  padding: 0px;
+}
+
+.noborder{
+  border : 0px;	
+}
+
+.inline{
+  display: inline;	
+}
+
+.layout_f{
+	float: left ;
+	display:inline;
+}
+
+.space{
+	display: inline;	
+	width : 5px;
+}
+
+.w{	
+	width : 20px;
+	text-align : center;
+}
+
+.w1{	
+	width : 30px;
+	background-color : #A5CFF1;
+	text-align : center;
+}
+
+.w2{	
+	width : 50px;
+	text-align : center;
+}
+
+.date{
+	display: inline;
+	text-align : center;
+	color : gray;
+	font-size : 9pt;
+	margin : 5px;	
+}
+
+.cau{
+	color : red;
+	font-size : 9pt;
+}
+/*화면의 가로너비가 768이하인 기기의 경우*/
+@media screen and (max-width: 768px){
+	#logo{  
+	  width : 300px;
+	}
+	
+}
